@@ -1,0 +1,89 @@
+main {
+  display: grid;
+
+  position: relative;
+}
+
+.landing__banner {
+  padding: 2rem;
+
+  background: var(--color-blood) url(../images/stacked-waves-haikei.svg)
+    no-repeat center center;
+  background-size: cover;
+  /* border-bottom: var(--border-size) solid var(--color-dark); */
+  color: var(--color-white);
+}
+
+.landing__banner h1 {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+/* PAGE PROJECT LIST */
+
+.landing-menu {
+  background-color: var(--color-dark);
+  overflow: hidden;
+}
+
+.landing-menu ul {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media all and (min-width: 1023px) {
+  .landing-menu ul {
+    margin-top: 0;
+  }
+}
+
+.landing-menu ul li a {
+  box-shadow: 0 0 1rem black;
+  padding: 2rem;
+  width: 100%;
+
+  background-color: var(--color-white);
+  display: inline-block;
+
+  cursor: not-allowed;
+  transition: transform 1s;
+}
+
+.landing-menu ul li a:hover {
+  transform: translateX(2.5em);
+
+  transition: transform 0.4s;
+}
+
+:root {
+  --bg-pos: left / contain no-repeat; /* BACKGROUND POSITION */
+}
+
+.landing-menu__hypnus-records {
+  background: var(--bg-pos) url(../images/hypnus.jpg);
+}
+.landing-menu__kabalion-records {
+  background: var(--bg-pos) url(../images/kabalion.jpg);
+}
+.landing-menu__aedi-records {
+  background: var(--bg-pos) url(../images/aedi.jpg);
+}
+.landing-menu__the-memoir {
+  background: var(--bg-pos) url(../images/thememoir.jpg);
+}
+.landing-menu__aether-mechanics {
+  background: var(--bg-pos) url(../images/aethermechanics.jpg);
+}
+.landing-menu__ntogn {
+  background: var(--bg-pos) url(../images/ntogn.jpg);
+}
+.landing-menu__slink {
+  background: var(--bg-pos) url(../images/slink.jpg);
+}
+.landing-menu__the-spellbook {
+  background: var(--bg-pos) url(../images/thespellbook.jpg);
+}
+.landing-menu__photography {
+  background: var(--bg-pos) url(../images/photography.jpg);
+}
