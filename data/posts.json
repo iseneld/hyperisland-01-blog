@@ -1,0 +1,54 @@
+[
+ {
+   "id": 1,
+   "title": "Post Header",
+   "previewImage": "https://source.unsplash.com/random/500x500",
+   "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+   "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+   "content": [
+     "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
+     "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+     "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image'/>",
+     "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+    ]
+ },
+  {
+    "id": 2,
+    "title": "A header with a different length",
+    "previewImage": "https://source.unsplash.com/random/500x500",
+    "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    "content": [
+      "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
+      "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+      "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image'/>",
+      "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+    ]
+  },
+   {
+     "id": 3,
+     "title": "... and an ever longer header to really bring up the excitement!",
+     "previewImage": "https://source.unsplash.com/random/500x500",
+     "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+     "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+     "content": [
+       "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
+       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+       "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image'/>",
+       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+     ]
+   },
+    {
+      "id": 4,
+      "title": "We'll keep the last one rather short",
+      "previewImage": "https://source.unsplash.com/random/500x500",
+      "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+      "content": [
+        "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
+        "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+        "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image'/>",
+        "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+      ]
+    }
+]
