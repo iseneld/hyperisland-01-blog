@@ -19,7 +19,6 @@ main {
   background: var(--color-yellow) url(../images/layered-waves-haikei.svg)
     no-repeat bottom center;
   background-size: cover;
-  /* border-bottom: var(--border-size) solid var(--color-dark); */
 
   text-align: center;
 }
@@ -34,6 +33,7 @@ main {
   transition: color 5s;
 }
 
+.blog-animation:focus,
 .blog-animation:hover {
   cursor: crosshair;
   color: var(--color-dark);
@@ -66,6 +66,7 @@ main {
   transition: transform 1s, border 1s;
 }
 
+.blog__thumbnails a:focus,
 .blog__thumbnails a:hover {
   border: 1rem solid var(--color-blood);
 

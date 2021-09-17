@@ -6,7 +6,6 @@
   padding: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  /* cursor: crosshair; */
 }
 
 body {
@@ -53,6 +52,7 @@ header ul li a {
   transition: color 0.4s;
 }
 
+header ul li a:focus,
 header ul li a:hover {
   color: var(--color-dark);
   text-decoration: none;
@@ -76,6 +76,7 @@ article a {
   transition: color 3s;
 }
 
+article a:focus,
 article a:hover {
   color: var(--color-blood);
   text-decoration: none;

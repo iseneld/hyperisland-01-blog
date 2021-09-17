@@ -10,7 +10,6 @@ main {
   background: var(--color-blood) url(../images/stacked-waves-haikei.svg)
     no-repeat center center;
   background-size: cover;
-  /* border-bottom: var(--border-size) solid var(--color-dark); */
   color: var(--color-white);
 }
 
@@ -50,6 +49,7 @@ main {
   transition: transform 1s;
 }
 
+.landing-menu ul li a:focus,
 .landing-menu ul li a:hover {
   transform: translateX(2.5em);
 
