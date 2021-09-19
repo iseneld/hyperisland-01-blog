@@ -1,5 +1,6 @@
 main {
   display: grid;
+  row-gap: 1rem;
 
   position: relative;
 }
@@ -10,34 +11,18 @@ main {
   background: var(--color-blood) url(../images/stacked-waves-haikei.svg)
     no-repeat center center;
   background-size: cover;
+  
   color: var(--color-white);
 }
 
-.landing__banner h1 {
-  position: -webkit-sticky;
-  position: sticky;
-}
+/* LANDING PAGE LIST */
 
-/* PAGE PROJECT LIST */
-
-.landing-menu {
-  background-color: var(--color-dark);
-  overflow: hidden;
-}
-
-.landing-menu ul {
-  margin-top: 1rem;
+.landing-list ul {
   display: grid;
   grid-gap: 1rem;
 }
 
-@media all and (min-width: 1023px) {
-  .landing-menu ul {
-    margin-top: 0;
-  }
-}
-
-.landing-menu ul li a {
+.landing-list ul li a {
   box-shadow: 0 0 1rem black;
   padding: 2rem;
   width: 100%;
@@ -45,45 +30,31 @@ main {
   background-color: var(--color-white);
   display: inline-block;
 
-  cursor: not-allowed;
+  cursor: not-allowed; /* Non-clickable indication */
+  text-decoration: none;
   transition: transform 1s;
 }
 
-.landing-menu ul li a:focus,
-.landing-menu ul li a:hover {
+.landing-list ul li a:focus,
+.landing-list ul li a:hover {
   transform: translateX(2.5em);
 
   transition: transform 0.4s;
 }
 
+/* BACKGROUND IMAGES */
+/* Revealed when hovering over landing page list items */
+
 :root {
-  --bg-pos: left / contain no-repeat; /* BACKGROUND POSITION */
+--bg-pos: left / contain no-repeat; /* POSITIONING */
 }
 
-.landing-menu__hypnus-records {
-  background: var(--bg-pos) url(../images/hypnus.jpg);
-}
-.landing-menu__kabalion-records {
-  background: var(--bg-pos) url(../images/kabalion.jpg);
-}
-.landing-menu__aedi-records {
-  background: var(--bg-pos) url(../images/aedi.jpg);
-}
-.landing-menu__the-memoir {
-  background: var(--bg-pos) url(../images/thememoir.jpg);
-}
-.landing-menu__aether-mechanics {
-  background: var(--bg-pos) url(../images/aethermechanics.jpg);
-}
-.landing-menu__ntogn {
-  background: var(--bg-pos) url(../images/ntogn.jpg);
-}
-.landing-menu__slink {
-  background: var(--bg-pos) url(../images/slink.jpg);
-}
-.landing-menu__the-spellbook {
-  background: var(--bg-pos) url(../images/thespellbook.jpg);
-}
-.landing-menu__photography {
-  background: var(--bg-pos) url(../images/photography.jpg);
-}
+.landing-list__hypnus { background: var(--bg-pos) url(../images/hypnus.jpg); }
+.landing-list__kabalion { background: var(--bg-pos) url(../images/kabalion.jpg); }
+.landing-list__aedi { background: var(--bg-pos) url(../images/aedi.jpg); }
+.landing-list__the-memoir { background: var(--bg-pos) url(../images/thememoir.jpg); }
+.landing-list__aether-mechanics { background: var(--bg-pos) url(../images/aethermechanics.jpg); }
+.landing-list__ntogn { background: var(--bg-pos) url(../images/ntogn.jpg); }
+.landing-list__slink { background: var(--bg-pos) url(../images/slink.jpg); }
+.landing-list__the-spellbook { background: var(--bg-pos) url(../images/thespellbook.jpg); }
+.landing-list__photography { background: var(--bg-pos) url(../images/photography.jpg); }

@@ -15,8 +15,9 @@ body {
   position: relative;
 
   display: grid;
+  row-gap: 1rem; 
   grid-template-rows: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevents scroll bar during animations */
 
   color: var(--dark-color);
   line-height: 1.5;
@@ -25,27 +26,31 @@ body {
 /* HEADER */
 
 header {
-  border-bottom: var(--border-size) solid var(--color-dark);
+  outline: 1rem solid var(--color-dark);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
+
+  position: sticky;
+  top: 0;
 
   background-color: var(--color-white);
 
   font-size: var(--h1);
   font-weight: bold;
-  z-index: 1;
 }
 
 header a {
   padding: 2rem 0.3rem 2rem 2rem;
+
+  text-decoration: none;
 }
 
-header a:last-child {
-  padding: 2rem 2rem 2rem 0.3rem;
-}
 header ul li a {
+  padding: 2rem 2rem 2rem 0.3rem;
+
   color: var(--color-blood);
   text-decoration: underline;
 
@@ -58,31 +63,7 @@ header ul li a:hover {
   text-decoration: none;
 }
 
-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header ul li {
-  list-style: none;
-}
-
 /* BODY */
-
-article a {
-  text-decoration: underline;
-
-  transition: color 3s;
-}
-
-article a:focus,
-article a:hover {
-  color: var(--color-blood);
-  text-decoration: none;
-
-  transition: color 0.2s;
-}
 
 /* FOOTER */
 
@@ -104,41 +85,36 @@ footer {
 
 a {
   color: var(--color-dark);
+  text-decoration: underline;
+
+  transition: color 3s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-blood);
   text-decoration: none;
+
+  transition: color 0.2s;
 }
 
-h1 {
-  font-size: var(--h1);
-}
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
 
-h2 {
-  font-size: var(--h2);
-}
+li { list-style-type: none; }
 
-h3 {
-  font-size: var(--h3);
-}
-
-h4 {
-  font-size: var(--h4);
-}
-
-h5 {
-  font-size: var(--h5);
-}
-
-li {
-  list-style-type: none;
-}
 /* CLASSES */
 
-.dragon-color {
-  animation-name: dragon;
-  animation-duration: 2s;
+.dragon-color { /* Meant to resemble fire */
+  animation-name: dragon; /* Yellow to orange color animation */
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-.dragon-text {
+.dragon-text { /* Red gothic font style */
   margin-bottom: 1rem;
 
   color: var(--color-blood);
@@ -146,13 +122,9 @@ li {
   line-height: 1em;
 }
 
-h1.dragon-text {
-  font-size: 3.5em;
-}
-
 /* ANIMATIONS */
 
-@keyframes dragon {
+@keyframes dragon { /* Yellow to orange color animation */
   from {
     color: var(--color-grey);
   }

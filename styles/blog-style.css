@@ -1,7 +1,3 @@
-main {
-  display: grid;
-}
-
 /* BANNER */
 
 .blog__banner {
@@ -23,10 +19,6 @@ main {
   text-align: center;
 }
 
-.blog__banner h3 {
-  margin-top: 3rem;
-}
-
 .blog-animation {
   font-family: inherit;
 
@@ -35,7 +27,7 @@ main {
 
 .blog-animation:focus,
 .blog-animation:hover {
-  cursor: crosshair;
+  cursor: crosshair; /* For fun */
   color: var(--color-dark);
 
   transition: all 0.2s;
@@ -44,31 +36,23 @@ main {
 /* THUMBNAILS */
 
 .blog__thumbnails {
-  width: 100%;
-  padding: 0;
-
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: var(--border-size); */
-
   display: flex;
   align-items: flex-start;
   flex-flow: row wrap;
 }
 
-.blog__thumbnails a {
-  flex: 1 0 24%;
+.blog__thumbnails article {
+  background-color: var(--color-blood);
+  flex: 1 0 48%;
 
-  background-color: var(--color-dark);
   border: 1rem solid var(--color-dark);
 
   transition: transform 1s, border 1s;
 }
 
-.blog__thumbnails a:focus,
-.blog__thumbnails a:hover {
-  border: 1rem solid var(--color-blood);
+.blog__thumbnails article:focus,
+.blog__thumbnails article:hover {
+  border-color: var(--color-blood);
 
   transform: translateY(-5%) rotate(3deg) scale(103%);
   box-shadow: 0px 0px 2rem var(--color-dark);
@@ -77,21 +61,19 @@ main {
   transition: transform 0.1s;
 }
 
-.blog__thumbnails a:active {
+.blog__thumbnails article:active {
   box-shadow: none;
-  transform: translateY(-5%) rotate(3deg) scale(101%);
+  transform: translateY(-5%) rotate(3deg) scale(100%);
 
   transition: transform 0.1s;
 }
 
-.blog__thumbnails article img {
-  width: 100%;
+.blog__thumbnails article a {
+    text-decoration: none;
 }
 
-.blog__thumbnails article h2,
-.blog__thumbnails article p {
+.blog__thumbnails article img {
   width: 100%;
-  transform: translateY(-0.5rem);
 }
 
 .blog__thumbnails article h2 {
@@ -115,12 +97,6 @@ main {
   }
 }
 
-@media screen and (min-width: 350px) {
-  h1.dragon-text {
-    font-size: 3.5em;
-  }
-}
-
 @media screen and (min-width: 374px) {
   h1.dragon-text {
     font-size: 5em;
@@ -135,23 +111,22 @@ main {
     max-width: 55rem;
     font-size: 8em;
   }
+
   .blog__banner {
     min-height: calc(62vh - 8rem);
   }
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 65rem) {
   .blog__splash p {
     display: inline-block;
     max-width: 105rem;
 
     font-size: var(--base-font-size);
   }
-  /* .blog__thumbnails {
-    grid-template-columns: repeat(4, 1fr);
-  } */
-  .blog__thumbnails article h2 {
-    padding: 32px;
+
+.blog__thumbnails article {
+    flex-basis: 24%;
   }
 
   .blog__thumbnails article p {
