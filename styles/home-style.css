@@ -32,14 +32,14 @@ main {
 
   cursor: not-allowed; /* Non-clickable indication */
   text-decoration: none;
-  transition: transform 1s;
+  transition: transform 0.6s cubic-bezier(.81,.02,.92,.65);
 }
 
 .landing-list ul li a:focus,
 .landing-list ul li a:hover {
   transform: translateX(2.5em);
 
-  transition: transform 0.4s;
+  transition: transform 0.4s cubic-bezier(.28,.78,.6,.93);
 }
 
 /* BACKGROUND IMAGES */

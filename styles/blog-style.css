@@ -47,7 +47,7 @@
 
   border: 1rem solid var(--color-dark);
 
-  transition: transform 1s, border 1s;
+  transition: transform 1s ease-out, border 1s;
 }
 
 .blog__thumbnails article:focus,

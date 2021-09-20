@@ -33,8 +33,11 @@ header {
   justify-content: space-between;
   z-index: 1;
 
+  /* 
+  Didn't think this fitted with the behaviours of the hovered thumbanails on blog.html
+
   position: sticky;
-  top: 0;
+  top: 0; */
 
   background-color: var(--color-white);
 
