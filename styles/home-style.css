@@ -11,7 +11,7 @@ main {
   background: var(--color-blood) url(../images/stacked-waves-haikei.svg)
     no-repeat center center;
   background-size: cover;
-  
+
   color: var(--color-white);
 }
 
@@ -32,29 +32,48 @@ main {
 
   cursor: not-allowed; /* Non-clickable indication */
   text-decoration: none;
-  transition: transform 0.6s cubic-bezier(.81,.02,.92,.65);
+
+  transition: transform 0.6s cubic-bezier(0.81, 0.02, 0.92, 0.65);
 }
 
 .landing-list ul li a:focus,
 .landing-list ul li a:hover {
   transform: translateX(2.5em);
 
-  transition: transform 0.4s cubic-bezier(.28,.78,.6,.93);
+  transition: transform 0.4s cubic-bezier(0.28, 0.78, 0.6, 0.93);
 }
 
 /* BACKGROUND IMAGES */
 /* Revealed when hovering over landing page list items */
 
 :root {
---bg-pos: left / contain no-repeat; /* POSITIONING */
+  --bg-pos: left / contain no-repeat; /* POSITIONING */
 }
 
-.landing-list__hypnus { background: var(--bg-pos) url(../images/hypnus.jpg); }
-.landing-list__kabalion { background: var(--bg-pos) url(../images/kabalion.jpg); }
-.landing-list__aedi { background: var(--bg-pos) url(../images/aedi.jpg); }
-.landing-list__the-memoir { background: var(--bg-pos) url(../images/thememoir.jpg); }
-.landing-list__aether-mechanics { background: var(--bg-pos) url(../images/aethermechanics.jpg); }
-.landing-list__ntogn { background: var(--bg-pos) url(../images/ntogn.jpg); }
-.landing-list__slink { background: var(--bg-pos) url(../images/slink.jpg); }
-.landing-list__the-spellbook { background: var(--bg-pos) url(../images/thespellbook.jpg); }
-.landing-list__photography { background: var(--bg-pos) url(../images/photography.jpg); }
+.landing-list__hypnus {
+  background: var(--bg-pos) url(../images/hypnus.jpg);
+}
+.landing-list__kabalion {
+  background: var(--bg-pos) url(../images/kabalion.jpg);
+}
+.landing-list__aedi {
+  background: var(--bg-pos) url(../images/aedi.jpg);
+}
+.landing-list__the-memoir {
+  background: var(--bg-pos) url(../images/thememoir.jpg);
+}
+.landing-list__aether-mechanics {
+  background: var(--bg-pos) url(../images/aethermechanics.jpg);
+}
+.landing-list__ntogn {
+  background: var(--bg-pos) url(../images/ntogn.jpg);
+}
+.landing-list__slink {
+  background: var(--bg-pos) url(../images/slink.jpg);
+}
+.landing-list__the-spellbook {
+  background: var(--bg-pos) url(../images/thespellbook.jpg);
+}
+.landing-list__photography {
+  background: var(--bg-pos) url(../images/photography.jpg);
+}

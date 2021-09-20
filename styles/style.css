@@ -15,7 +15,7 @@ body {
   position: relative;
 
   display: grid;
-  row-gap: 1rem; 
+  row-gap: 1rem;
   grid-template-rows: auto;
   overflow-x: hidden; /* Prevents scroll bar during animations */
 
@@ -101,23 +101,37 @@ a:hover {
   transition: color 0.2s;
 }
 
-h1 { font-size: var(--h1); }
-h2 { font-size: var(--h2); }
-h3 { font-size: var(--h3); }
-h4 { font-size: var(--h4); }
-h5 { font-size: var(--h5); }
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
 
-li { list-style-type: none; }
+li {
+  list-style-type: none;
+}
 
 /* CLASSES */
 
-.dragon-color { /* Meant to resemble fire */
+.dragon-color {
+  /* Meant to resemble fire */
   animation-name: dragon; /* Yellow to orange color animation */
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-.dragon-text { /* Red gothic font style */
+.dragon-text {
+  /* Red gothic font style */
   margin-bottom: 1rem;
 
   color: var(--color-blood);
@@ -127,7 +141,8 @@ li { list-style-type: none; }
 
 /* ANIMATIONS */
 
-@keyframes dragon { /* Yellow to orange color animation */
+@keyframes dragon {
+  /* Yellow to orange color animation */
   from {
     color: var(--color-grey);
   }
