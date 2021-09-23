@@ -14,7 +14,7 @@ function createThumbnail(post) {
   let thumbnail = `
  <article> 
     <a href="../pages/blog-post.html?id=${post.id}">
-      <img src="${post.previewImage}" alt="image" />
+      <img src="${post.previewImage}" height="500" width="500" alt="image" />
       <h2>${post.title}</h2>
       <p>${post.shortSummary}</p>
     </a>
@@ -41,7 +41,7 @@ function getPostFromId() {
 
 function createPost(post) {
   document.querySelector(".blog__post h2").innerHTML = post.title;
-  document.querySelector(".blog__post h3").innerHTML = post.fullSummary;
+  document.querySelector(".blog__post h5").innerHTML = post.fullSummary;
   let content = post.content;
 
   for (let i = 0; i < content.length; i++) {

@@ -1,4 +1,8 @@
 :root {
+  --border-size: 1rem;
+
+  /* COLORS */
+
   --color-white: rgb(238, 238, 238);
   --color-blood: #af3333;
   --color-dark: #1e1e1e;
@@ -6,14 +10,12 @@
   --color-orange: #f66c03;
   --color-yellow: #ffb532;
 
-  --border-size: 1rem;
-
   /* FONT SIZE SCALES */
 
   --base-font-size: 1em;
   --type-scale: 1.125;
 
-  --h5: calc(var(--base-font-size) * var(--type-scale));
+  --h5: calc(var(--base-font-size));
   --h4: calc(var(--h5) * var(--type-scale));
   --h3: calc(var(--h4) * var(--type-scale));
   --h2: calc(var(--h3) * var(--type-scale));

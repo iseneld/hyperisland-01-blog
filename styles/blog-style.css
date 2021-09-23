@@ -42,17 +42,22 @@
 }
 
 .blog__thumbnails article {
-  background-color: var(--color-blood);
   flex: 1 0 48%;
 
   border: 1rem solid var(--color-dark);
 
-  transition: transform 1s ease-out, border 1s;
+  transition: 
+    background-color 0.5s 1s,
+    border 0.8s 0.4s ease-out, 
+    border-radius 1s ease,
+    transform 0.5s ease-in;
 }
 
 .blog__thumbnails article:focus,
 .blog__thumbnails article:hover {
+  background-color: var(--color-blood);
   border-color: var(--color-blood);
+  border-radius: 2rem;
 
   transform: translateY(-5%) rotate(3deg) scale(103%);
   box-shadow: 0px 0px 2rem var(--color-dark);
@@ -61,11 +66,24 @@
   transition: transform 0.1s;
 }
 
+.blog__thumbnails article img,
+.blog__thumbnails article p {
+
+  transition: border-radius 0.6s; 
+}
+
+.blog__thumbnails article:focus img,
+.blog__thumbnails article:hover img, 
+.blog__thumbnails article:focus p,
+.blog__thumbnails article:hover p {
+  border-radius: 1rem;
+
+  transition: border-radius 0s; 
+}
+
 .blog__thumbnails article:active {
   box-shadow: none;
-  transform: translateY(-5%) rotate(3deg) scale(100%);
-
-  transition: transform 0.1s;
+  transform: translateY(-5%) rotate(3deg) scale(101%);
 }
 
 .blog__thumbnails article a {
@@ -74,6 +92,7 @@
 
 .blog__thumbnails article img {
   width: 100%;
+  margin-bottom: -8px; /* Solving spacing issue between <img> and <h2> */
 }
 
 .blog__thumbnails article h2 {
@@ -86,6 +105,7 @@
 .blog__thumbnails article p {
   background-color: var(--color-white);
 
+  margin: 0;
   padding: 2rem;
 }
 
@@ -95,21 +115,16 @@
   h1.dragon-text {
     font-size: 3.5em;
   }
-}
 
-@media screen and (min-width: 374px) {
-  h1.dragon-text {
-    font-size: 5em;
-  }
   .blog__banner {
     min-height: calc(52vh - 8rem);
   }
 }
 
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 46rem) {
   h1.dragon-text {
     max-width: 55rem;
-    font-size: 8em;
+    font-size: 6em;
   }
 
   .blog__banner {
@@ -118,14 +133,15 @@
 }
 
 @media screen and (min-width: 65rem) {
-  .blog__splash p {
-    display: inline-block;
-    max-width: 105rem;
-
-    font-size: var(--base-font-size);
+  .blog__banner {
+    grid-column: 1 / 3;
   }
 
-.blog__thumbnails article {
+  .blog__thumbnails {
+    grid-column: 1 / 3;
+  }
+
+  .blog__thumbnails article {
     flex-basis: 24%;
   }
 
