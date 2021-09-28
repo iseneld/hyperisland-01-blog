@@ -1,5 +1,27 @@
-@import url("./variables.css");
-/* @import url("./media-queries.css"); */
+
+:root {
+  --border-size: 1rem;
+
+  /* COLORS */
+
+  --color-white: rgb(238, 238, 238);
+  --color-blood: #af3333;
+  --color-dark: #1e1e1e;
+  --color-grey: #d2d2ce;
+  --color-orange: #f66c03;
+  --color-yellow: #ffb532;
+
+  /* FONT SIZE SCALES */
+
+  --base-font-size: 1.25em;
+  --type-scale: 1.125;
+
+  --h5: calc(var(--base-font-size));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+}
 
 * {
   margin: 0;
@@ -123,7 +145,11 @@ li {
 
 p {
   font-size: var(--base-font-size);
-  margin: 2rem 0;
+  margin: 2rem 0 0;
+}
+
+p:first-child {
+  margin-top: 0;
 }
 
 /* CLASSES */
@@ -141,6 +167,7 @@ p {
 
   color: var(--color-blood);
   font-family: "UnifrakturMaguntia", "Times New Roman", serif;
+  font-size: calc(var(--h1) * 1.25);
   line-height: 1em;
 }
 

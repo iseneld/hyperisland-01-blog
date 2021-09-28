@@ -70,7 +70,7 @@ main {
 /* CLASSES */
 
 .not-a-link a { 
-  color: rgb(189, 189, 189); 
+  color: #767676; 
 }
 
 .not-a-link *:hover { 
@@ -79,13 +79,13 @@ main {
 
 /* MEDIA QUERIES */
 
-@media all and (min-width: 408px) {
+@media all and (min-width: 25rem) {
   :root {
     --base-font-size: 1.3rem;
   }
 }
 
-@media all and (min-width: 1023px) {
+@media all and (min-width: 64rem) {
   body {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 8rem 1fr;

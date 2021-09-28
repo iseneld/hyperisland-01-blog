@@ -2,29 +2,8 @@
 
 body {
   background-color: var(--color-blood);
-
-  overflow: hidden;
-}
-
-.slink__banner {
-  min-height: calc(42vh - 8rem);
-  width: 100%;
-  padding: 2rem;
-
-  grid-column: 1 / 3;
-
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
-
-.slink__banner h1 {
-  font-size: calc(var(--h1) * 2);
+  overflow: hidden;
 }
 
 svg {
@@ -59,51 +38,4 @@ svg {
   100% {
     transform: translateX(-5%) translateY(10%);
   }
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (min-width: 300px) {
-  h1.dragon-text {
-    font-size: 3.5em;
-  }
-}
-
-@media screen and (min-width: 374px) {
-  h1.dragon-text {
-    font-size: 5em;
-  }
-  .slink__banner {
-    min-height: calc(52vh - 8rem);
-  }
-}
-
-@media screen and (min-width: 45rem) {
-  h1.dragon-text {
-    max-width: 55rem;
-    font-size: 8em;
-  }
-
-  .slink__banner {
-    min-height: calc(62vh - 8rem);
-  }
-}
-
-@media screen and (min-width: 65rem) {
-  .slink__splash p {
-    display: inline-block;
-    max-width: 105rem;
-
-    font-size: var(--base-font-size);
-  }
-
-.slink__thumbnails article {
-    flex-basis: 24%;
-  }
-
-  .slink__thumbnails article p {
-    padding: 1rem 2rem;
-
-    font-size: var(--h5);
-  }
-}
+};

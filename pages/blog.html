@@ -38,7 +38,7 @@
 
   <!-- BODY -->
 
-  <body onload="getThumbnails()">
+  <body onload="getThumbnails(); birthdayCalculator(); birthCalculatorYears();">
     <header>
       <a href="../index.html">Michel Iseneld</a>
       <nav>
@@ -55,10 +55,26 @@
           <span class="blog-animation">exercise</span>
         </h1>
         <h3>
-          Adapting with grid, flexbox, custom properties and media queries!
+          Adapting with grid, flexbox and custom properties updated by media queries!
         </h3>
       </section>
       <section class="blog__thumbnails"></section>
+      <aside>
+        <p>
+          A grid is nesting flexboxes, that's nesting a grid with another flexbox inside to practice advanced responsive layouts.
+        </p>
+        <p>
+          I've struggled making the thumbnail images sizing properly in all window configurations.
+        </p>
+        <p>
+          Ideally, I'd like the image to stretch the full height of the container, use the same width as height, and have the other blocks resize accordingly.
+        </p>
+      </aside>
+      <aside id="since-born">
+        <p>
+          Today it's been <span id="elapsed-days"></span> days since I was born. That's <span id="elapsed-years"></span> years! 🧙✨
+        </p>
+      </aside>
     </main>
     <footer>Coded by Michel Iseneld</footer>
   </body>

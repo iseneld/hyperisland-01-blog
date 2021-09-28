@@ -1,23 +1,10 @@
 [
- {
-   "id": 1,
-   "title": "Post Header",
-   "previewImage": "https://source.unsplash.com/random/500x500",
-   "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-   "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-   "content": [
-     "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
-     "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
-     "<img src='https://source.unsplash.com/random/1000x500' height='500' width='1000' alt='A randomly generated placeholder image'/>",
-     "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
-    ]
- },
   {
-    "id": 2,
-    "title": "A header with a different length",
+    "id": 4,
+    "title": "All blog posts are fetched from a JSON file",
     "previewImage": "https://source.unsplash.com/random/500x500",
-    "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    "shortSummary": "This is done with Javascript by looping through all objects in the file.",
+    "fullSummary": "I've also experimented with doing this from a local server via the WordPress CMS. It worked beside some issues with media files. I suspect it might have something to do with my hard drive being in the cloud through Google Drive, and I chose not to spend too much time figuring it out during this module.",
     "content": [
       "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
@@ -25,30 +12,37 @@
       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
     ]
   },
+  {
+    "id": 2,
+    "title": "Approach to CSS",
+    "previewImage": "https://source.unsplash.com/random/500x500",
+    "shortSummary": "Focus has been on responsiveness and selector experimentation.",
+    "fullSummary": "The site has one global stylesheet plus one per individual page.",
+    "content": [
+        "<p>Since all pages vary in content, and I wanted to experiment with different layouts and behaviors, I’ve decided to place the media queries in the page-specific stylesheets.</p>",
+        "<p>This process has given valuable insights into the cascading feature of CSS.</p>"
+    ]
+  },
    {
      "id": 3,
-     "title": "... and an ever longer header to really bring up the excitement!",
+     "title": "Optimizing for page speed is more fun than it sounds!",
      "previewImage": "https://source.unsplash.com/random/500x500",
-     "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-     "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+     "shortSummary": "I got my page loading speed down by 45% with two simple steps.",
+     "fullSummary": "I’ve spent time in the browser’s Network tab, simulating page loads on slow connections without the use of cache. This has been educational on the loading mechanisms of browsers and gives a clear view of the importance of compressed images and documents.",
      "content": [
-       "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
-       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
-       "<img src='https://source.unsplash.com/random/1000x500' height='500' width='1000' alt='A randomly generated placeholder image'/>",
-       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+        "<p>By using separate CSS files for the unique styles for each page and compressing images, I reduced page load speed by over 45%.</p>"
      ]
    },
-    {
-      "id": 4,
-      "title": "We'll keep the last one rather short",
-      "previewImage": "https://source.unsplash.com/random/500x500",
-      "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-      "content": [
-        "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
-        "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
-        "<img src='https://source.unsplash.com/random/1000x500' height='500' width='1000' alt='A randomly generated placeholder image'/>",
-        "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
-      ]
-    }
+ {
+   "id": 1,
+   "title": "My methods for this project",
+   "previewImage": "https://source.unsplash.com/random/500x500",
+   "shortSummary": "A brief insight into my approach to this school project!",
+   "fullSummary": "My goal with this project has been to gain fluency with CSS targeting, flexbox, grid, and semantic HTML.",
+   "content": [
+        "<p>I’ve approached this by attempting to use as few classes and content divider elements as possible. Instead, I’ve experimented creatively with CSS selectors and computer-readable elements.</p>",
+        "<p>By doing this, I now feel that I see more clearly where classes and dividers are helpful and how much I can do without them for this type of site. I found it especially interesting to see the usefulness of working with low specificity.</p>",
+        "<p>A horizontally spread hierarchy of elements makes it easier to keep the site manageable when classes and ids are needed.</p>"
+    ]
+ }
 ]

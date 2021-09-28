@@ -15,12 +15,13 @@
 }
 
 .blog__post h3 {
-  grid-column: 1 / 2;
+  margin-top: 1rem;
 }
 
 .blog__post img {
   background-color: var(--color-dark);
   border: var(--border-size) solid var(--color-dark);
+  margin: 2rem 0 0;
 
   transform: translateX(-36rem);
 }
@@ -28,7 +29,6 @@
 @media all and (max-width: 1023px) {
     .blog__post img {
       width: 100%;
-      border: var(--border-size) solid var(--color-yellow);
       transform: translateX(0px);
   }
 }

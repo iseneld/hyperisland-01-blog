@@ -14,8 +14,10 @@ function createThumbnail(post) {
   let thumbnail = `
  <article> 
     <a href="../pages/blog-post.html?id=${post.id}">
-      <img src="${post.previewImage}" height="500" width="500" alt="image" />
-      <h2>${post.title}</h2>
+      <img src="${post.previewImage}" alt="A randomly generated image" />
+      <div>
+        <h2>${post.title}</h2>
+      </div>
       <p>${post.shortSummary}</p>
     </a>
   </article>
@@ -49,7 +51,9 @@ function createPost(post) {
   }
 
   let backLink = `
-  <a href="./blog.html">Back to blog page</a>
+  <p>
+    <a href="./blog.html">Back to blog page</a>
+  </p>
   `;
   document.querySelector(".blog__post article").innerHTML += backLink;
 }
@@ -59,4 +63,22 @@ function createPost(post) {
 function findQuery(param) {
   var urlParams = new URLSearchParams(window.location.search, param);
   return urlParams.get(param);
+}
+
+// FUN STUFF
+let birth = "October 20, 1988 04:40:00 GMT";
+let born = new Date(birth);
+let now = new Date();
+let elapsed = now - born;
+
+var daysSinceBorn = Math.floor(elapsed / (1000 * 3600 * 24));
+
+function birthdayCalculator() {
+  document.querySelector("#elapsed-days").innerHTML = daysSinceBorn;
+}
+
+function birthCalculatorYears() {
+  let yearsSinceBorn = parseFloat(daysSinceBorn / 365).toFixed(2);
+
+  document.querySelector("#elapsed-years").innerHTML += yearsSinceBorn;
 }
