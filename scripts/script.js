@@ -80,5 +80,5 @@ function birthdayCalculator() {
 function birthCalculatorYears() {
   let yearsSinceBorn = parseFloat(daysSinceBorn / 365).toFixed(2);
 
-  document.querySelector("#elapsed-years").innerHTML += yearsSinceBorn;
+  document.querySelector("#elapsed-years").innerHTML = yearsSinceBorn;
 }

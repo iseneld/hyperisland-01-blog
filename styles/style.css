@@ -167,7 +167,7 @@ p:first-child {
 
   color: var(--color-blood);
   font-family: "UnifrakturMaguntia", "Times New Roman", serif;
-  font-size: calc(var(--h1) * 1.25);
+  font-size: calc(var(--h1) * 1.75);
   line-height: 1em;
 }
 
