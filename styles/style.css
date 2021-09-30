@@ -36,6 +36,8 @@ body {
   max-width: 100vw;
   position: relative;
 
+  padding-bottom: 9rem;
+
   display: grid;
   row-gap: 1rem;
   grid-template-rows: auto;
@@ -93,17 +95,42 @@ header ul li a:hover {
 /* FOOTER */
 
 footer {
-  padding: 1rem;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 2rem;
+  right: 2rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
+  border: 0.5rem solid var(--color-grey);
+  box-shadow: 0 2px 0.5rem black;
+  min-width: 16.75rem;
+
   background-color: var(--color-dark);
   color: var(--color-grey);
+  font-size: var(--base-font-size);
+
+  transition: background-color 0.5s ease-out, border-radius 0.5s;
+}
+
+footer:hover {
+  border-color: var(--color-dark);
+  border-radius: 1rem;
+
+  background-color: var(--color-blood);
+  color: var(--color-white);
+}
+
+footer a {
+  padding: 1rem;
+
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-white);
 }
 
 /* ELEMENTS */

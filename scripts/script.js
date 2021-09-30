@@ -66,6 +66,9 @@ function findQuery(param) {
 }
 
 // FUN STUFF
+
+//BIRTH CALCULATOR
+
 let birth = "October 20, 1988 04:40:00 GMT";
 let born = new Date(birth);
 let now = new Date();
@@ -81,4 +84,13 @@ function birthCalculatorYears() {
   let yearsSinceBorn = parseFloat(daysSinceBorn / 365).toFixed(2);
 
   document.querySelector("#elapsed-years").innerHTML = yearsSinceBorn;
+}
+
+// DARK MODE
+
+let root = document.documentElement;
+
+function darkMode() {
+  console.log("Dark Mode");
+  document.querySelector("body").classList.toggle("dark-mode");
 }

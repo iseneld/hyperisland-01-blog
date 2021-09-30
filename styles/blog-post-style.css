@@ -1,3 +1,5 @@
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
+
 .blog__post {
   padding: 2rem;
 
@@ -25,6 +27,42 @@
 
   transform: translateX(-36rem);
 }
+
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+
+button {
+  position: sticky;
+  top: 2rem;
+
+  border: 0.5rem solid var(--color-dark);
+  border-radius: 0;
+  padding: 1rem;
+
+  background-color: var(--color-grey);
+  box-shadow: 0 4px .5rem black;
+
+  color: var(--color-dark);
+  font-size: var(--base-font-size); 
+
+  transition: background-color 0.6s ease-out;
+}
+
+button:active {
+  box-shadow: none;
+  transform: scale(95%);
+}
+
+:root *.dark-mode,
+.dark-mode .blog__post {
+  --color-white: #1e1e1e;
+  --color-blood: #ffb532;
+  --color-dark: #d2d2ce;
+  --color-grey: #1e1e1e;
+
+  color: var(--color-dark);
+}
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 
 @media all and (max-width: 1023px) {
     .blog__post img {
