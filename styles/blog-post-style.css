@@ -65,9 +65,9 @@ button:active {
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 
 @media all and (max-width: 1023px) {
-    .blog__post img {
-      width: 100%;
-      transform: translateX(0px);
+  .blog__post img {
+    width: 100%;
+    transform: translateX(0px);
   }
 }
 
