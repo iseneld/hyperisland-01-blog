@@ -27,6 +27,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  /* font-size: var(--base-font-size); */
   box-sizing: border-box;
 }
 
@@ -103,13 +104,14 @@ footer {
   align-items: center;
   justify-content: center;
 
+  z-index: 1;
+
   border: 0.5rem solid var(--color-grey);
   box-shadow: 0 2px 0.5rem black;
   min-width: 16.75rem;
 
   background-color: var(--color-dark);
   color: var(--color-grey);
-  font-size: var(--base-font-size);
 
   transition: background-color 0.5s ease-out, border-radius 0.5s;
 }
@@ -122,7 +124,8 @@ footer:hover {
   color: var(--color-white);
 }
 
-footer a {
+footer a,
+footer a:visited {
   padding: 1rem;
 
   color: var(--color-white);
