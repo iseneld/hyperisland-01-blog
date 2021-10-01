@@ -1,15 +1,17 @@
 main {
   display: grid;
   row-gap: 1rem;
-
-  position: relative;
 }
 
 .landing__banner {
   padding: 2rem;
 
-  background: var(--color-blood) url(../images/stacked-waves-haikei.svg)
-    no-repeat center center;
+  background: 
+    var(--color-blood) 
+    url(../images/stacked-waves-haikei.svg)
+    no-repeat 
+    center 
+    center;
   background-size: cover;
 
   color: var(--color-white);
@@ -19,7 +21,7 @@ main {
   margin-bottom: 6rem;
 }
 
-/* LANDING PAGE LIST */
+/* LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST */
 
 .landing-list ul {
   display: grid;
@@ -51,10 +53,10 @@ main {
     border-radius 0.2s;
 }
 
-/* LIST BACKGROUND IMAGES */
+/* Background Images*/
 
-:root {
-  --bg-pos: left / contain no-repeat; /* POSITIONING */
+:root { /* Positioning of list background images */
+  --bg-pos: left / contain no-repeat; 
 }
 
 .landing-list__hypnus { background: var(--bg-pos) url(../images/hypnus.jpg); }
@@ -67,19 +69,16 @@ main {
 .landing-list__the-spellbook { background: var(--bg-pos) url(../images/thespellbook.jpg); }
 .landing-list__photography { background: var(--bg-pos) url(../images/photography.jpg); }
 
-/* CLASSES */
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 
 .not-a-link a { 
   color: #767676; 
-}
-
-.not-a-link *:hover { 
   cursor: not-allowed; 
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 
-@media all and (min-width: 64rem) {
+@media screen and (min-width: 64rem) {
   body {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 8rem 1fr;
@@ -94,7 +93,7 @@ main {
     grid-column: span 2;
 
     display: grid;
-    grid-template-columns: 38.2% 1fr; /* 38.2% = Golden Ratio */
+    grid-template-columns: var(--golden-ratio) 1fr;
   }
 
   .landing__banner {

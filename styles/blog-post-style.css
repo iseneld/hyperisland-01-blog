@@ -71,7 +71,7 @@ button:active {
   }
 }
 
-@media all and (max-width: 32rem) {
+@media screen and (max-width: 32rem) {
   .blog__post {
     grid-template-columns: 1fr;
   }

@@ -1,8 +1,10 @@
 
 :root {
+  /* Global Sizes */
   --border-size: 1rem;
+  --golden-ratio: 38.2%;
 
-  /* COLORS */
+  /* Color Palette */
 
   --color-white: rgb(238, 238, 238);
   --color-blood: #af3333;
@@ -11,7 +13,7 @@
   --color-orange: #f66c03;
   --color-yellow: #ffb532;
 
-  /* FONT SIZE SCALES */
+  /* Font Size Scales */
 
   --base-font-size: 1.25em;
   --type-scale: 1.125; /* Major Second Scale */
@@ -46,7 +48,7 @@ body {
   line-height: 1.5;
 }
 
-/* HEADER */
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
 
 header {
   outline: 1rem solid var(--color-dark);
@@ -86,7 +88,7 @@ header ul li a:hover {
   text-decoration: none;
 }
 
-/* FOOTER */
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 footer {
   display: flex;
@@ -122,7 +124,7 @@ footer a:hover {
   color: var(--color-white);
 }
 
-/* ELEMENTS */
+/* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */
 
 a {
   color: var(--color-dark);
@@ -148,19 +150,17 @@ li { list-style-type: none; }
 p { margin: 2rem 0 0; }
 p:first-child { margin-top: 0; }
 
-/* CLASSES */
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
 
 .dragon-text {
   /* Red gothic font style */
-  margin-bottom: 1rem;
-
   color: var(--color-blood);
   font-family: "UnifrakturMaguntia", "Times New Roman", serif;
   font-size: calc(var(--h1) * 1.75);
   line-height: 1em;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 
 @media screen and (min-width: 64rem) {
   footer {
