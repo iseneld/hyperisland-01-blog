@@ -285,8 +285,8 @@ aside {
   }
 
   aside {
-    grid-column: 1;
-    grid-row: 3 / 4;
+    grid-column: 2;
+    grid-row: 5;
   }
 
   #since-born {
@@ -329,8 +329,13 @@ aside {
     height: 100%;
   }
 
-  #since-born {
+  aside {
     grid-column: 2;
+    grid-row: 3;
+  }
+
+  #since-born {
+    grid-column: 3;
     grid-row: 3;
   }
 }
