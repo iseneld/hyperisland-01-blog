@@ -93,10 +93,11 @@ header ul li a:hover {
 footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 1;
 
   background-color: var(--color-dark); 
-  box-shadow: 0 2px 0.5rem black;
+  box-shadow: 0 4px .5rem #1e1e1e;
   min-width: 16.75rem;
 
   color: var(--color-white);
@@ -106,8 +107,6 @@ footer {
 }
 
 footer:hover {
-  border-color: var(--color-dark);
-
   background-color: var(--color-blood);
   color: var(--color-white);
 }
@@ -171,7 +170,6 @@ p:first-child { margin-top: 0; }
     border: 0.5rem solid var(--color-grey);
 
     font-size: var(--base-font-size);
-    justify-content: center;
   }
 
   footer:hover {

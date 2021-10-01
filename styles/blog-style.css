@@ -50,14 +50,26 @@
   gap: 1rem;
 }
 
+.blog__thumbnails article div {  /* Thumbnail Wrapper */
+  display: flex;
+  align-items: center;
+
+  background-color: var(--color-blood);
+}
+
 .blog__thumbnails article a {
+  flex: 1 0 auto;
+  
   outline: 1rem solid var(--color-dark);
   height: 100%;
   width: 100%;
 
-  flex: 1 0 auto;
+  display: grid;
+  align-items: stretch;
 
   transition: transform 0.1s ease-out, outline 0.5s ease;
+
+  text-decoration: none;
 }
 
 .blog__thumbnails article a:focus,
@@ -67,38 +79,20 @@
   outline: 1rem solid var(--color-blood);
   transform: scale(1.03);  
 
-  z-index: 2;
+  z-index: 1;
 
   transition: transform 0.2s ease-out, outline 0.2s ease-out;
 }
 
-.blog__thumbnails article a {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  align-items: stretch;
-
-  text-decoration: none;
-}
-
 .blog__thumbnails article img {
   width: 100%;
-
+  
   display: none;
-}
-
-.blog__thumbnails article div { 
-/* Header Wrapper */
-  display: flex;
-  align-items: center;
-
-  background-color: var(--color-blood);
 }
 
 .blog__thumbnails article h2 {
   padding: 1rem 2rem;
 
-  background-color: var(--color-blood);
   color: var(--color-yellow);
 }
 
@@ -115,10 +109,9 @@
 
 aside {
   padding: 2rem;
+  align-self: start;
 
   background-color: var(--color-white);
-
-  align-self: start;
 }
 
 #elapsed-days,
