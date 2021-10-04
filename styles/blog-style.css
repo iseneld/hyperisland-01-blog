@@ -39,7 +39,7 @@
   cursor: crosshair; /* For fun */
   color: var(--color-dark);
 
-  transition: all 0.2s;
+  transition: all var(--speed-fast);
 }
 
 /* THUMBNAILS - THUMBNAILS - THUMBNAILS - THUMBNAILS - THUMBNAILS - THUMBNAILS */
@@ -67,7 +67,7 @@
   display: grid;
   align-items: stretch;
 
-  transition: transform 0.1s ease-out, outline 0.5s ease;
+  transition: transform var(--speed-fast) ease-out, outline var(--speed-slow) ease;
 
   text-decoration: none;
 }
@@ -81,7 +81,7 @@
 
   z-index: 1;
 
-  transition: transform 0.2s ease-out, outline 0.2s ease-out;
+  transition: transform var(--speed-fast) ease-out, outline var(--speed-fast) ease-out;
 }
 
 .blog__thumbnails article img {

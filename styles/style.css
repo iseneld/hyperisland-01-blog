@@ -23,6 +23,10 @@
   --h3: calc(var(--h4) * var(--type-scale));
   --h2: calc(var(--h3) * var(--type-scale));
   --h1: calc(var(--h2) * var(--type-scale));  
+
+  /* Animation Speeds */
+  --speed-fast: 0.1s;
+  --speed-slow: 0.5s;
 }
 
 * {
@@ -79,7 +83,7 @@ header ul li a {
   color: var(--color-blood);
   text-decoration: underline;
 
-  transition: color 0.2s;
+  transition: color var(--speed-fast);
 }
 
 header ul li a:focus,
@@ -103,7 +107,7 @@ footer {
   color: var(--color-white);
   font-size: var(--h2);
 
-  transition: background-color 0.5s ease-out, border-radius 0.5s;
+  transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
 }
 
 footer:hover {
@@ -129,7 +133,7 @@ a {
   color: var(--color-dark);
   text-decoration: underline;
 
-  transition: color 0.2s;
+  transition: color var(--speed-fast);
 }
 
 a:focus,
@@ -172,12 +176,15 @@ p:first-child { margin-top: 0; }
     font-size: var(--base-font-size);
   }
 
-  footer:hover {
+  footer:active,
+  footer:hover {        
     border-radius: 1rem;
+
+    transition: border-radius var(--speed-fast) ease-out;
   }
 
   footer a,
-    footer a:visited {
+  footer a:visited {
       padding: 1rem;
   }
 }

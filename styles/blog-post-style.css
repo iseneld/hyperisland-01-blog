@@ -44,7 +44,15 @@ button {
   color: var(--color-dark);
   font-size: var(--base-font-size); 
 
-  transition: background-color 0.6s ease-out;
+  transition: border-radius var(--speed-slow);
+}
+
+button:focus,
+button:hover {
+  border-radius: 1rem;
+  cursor: pointer;
+
+  transition: border-radius  var(--speed-fast);
 }
 
 button:active {
