@@ -98,20 +98,30 @@ function getPostFromId() {
 }
 
 function createPost(post) {
-  document.querySelector(".blog__post h2").innerHTML = post.title;
-  document.querySelector(".blog__post h5").innerHTML = post.fullSummary;
+  let h2 = document.createElement("h2");
+  let h5 = document.createElement("h5");
+
+  h2.innerHTML = post.title;
+  h5.innerHTML = post.fullSummary;
+
+  let blogSection = document.querySelector(".blog__post");
+
+  blogSection.append(h2);
+  blogSection.append(h5);
+
   let content = post.content;
 
   for (let i = 0; i < content.length; i++) {
-    document.querySelector(".blog__post article").innerHTML += content[i];
+    blogSection.innerHTML += content[i];
   }
 
   let backLink = `
-  <p>
-    <a href="./blog.html">Back to blog page</a>
-  </p>
+    <p>
+      <a href="./blog.html">Back to blog page</a>
+    </p>
   `;
-  document.querySelector(".blog__post article").innerHTML += backLink;
+
+  blogSection.innerHTML += backLink;
 }
 
 // QUERY URL STRING
