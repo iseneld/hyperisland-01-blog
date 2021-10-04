@@ -105,7 +105,7 @@ footer {
   min-width: 16.75rem;
 
   color: var(--color-white);
-  font-size: var(--h2);
+  font-size: var(--h5);
 
   transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
 }
@@ -164,6 +164,13 @@ p:first-child { margin-top: 0; }
 }
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+
+@media screen and (max-width: 27rem) {
+  :root {
+    --base-font-size: 1rem; 
+  }
+}
+
 
 @media screen and (min-width: 64rem) {
   footer {
