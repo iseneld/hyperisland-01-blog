@@ -1,3 +1,15 @@
+// FOOTER
+function footer() {
+  let newFooter = document.createElement("footer");
+  let newAnchor = document.createElement("a");
+  newAnchor.setAttribute("href", "https://www.linkedin.com/in/micheliseneld/");
+  newAnchor.setAttribute("target", "_blank");
+  newAnchor.innerHTML = "Coded by Michel Iseneld";
+  newFooter.append(newAnchor);
+
+  document.querySelector("body").append(newFooter);
+}
+
 // THUMBNAILS
 
 function getThumbnails() {

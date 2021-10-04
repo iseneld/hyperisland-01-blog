@@ -95,6 +95,7 @@ header ul li a:hover {
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 footer {
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,6 +175,7 @@ p:first-child { margin-top: 0; }
 
 @media screen and (min-width: 64rem) {
   footer {
+    height: auto;
     position: fixed;
     bottom: 2rem;
     left: 2rem;
