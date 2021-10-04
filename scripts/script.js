@@ -1,4 +1,5 @@
-// FOOTER
+// DOM
+
 function footer() {
   let newFooter = document.createElement("footer");
   let newAnchor = document.createElement("a");
@@ -8,6 +9,49 @@ function footer() {
   newFooter.append(newAnchor);
 
   document.querySelector("body").append(newFooter);
+}
+
+function header() {
+  let newHeader = document.createElement("header");
+  let headerContent = `
+    <a href="../index.html">Michel Iseneld</a>
+    <nav>
+      <ul>
+        <li><a href="../pages/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    `;
+  newHeader.innerHTML = headerContent;
+
+  document.querySelector("body").prepend(newHeader);
+}
+
+function indexHeader() {
+  let newHeader = document.createElement("header");
+  let headerContent = `
+    <a href="./index.html">Michel Iseneld</a>
+    <nav>
+      <ul>
+        <li><a href="./pages/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    `;
+  newHeader.innerHTML = headerContent;
+
+  document.querySelector("body").prepend(newHeader);
+}
+
+// Loads header and footer for all pages.
+// index.html has a separate function for correct link path.
+
+function loadDOM(x) {
+  if (x === "index") {
+    indexHeader();
+    footer();
+  } else {
+    header();
+    footer();
+  }
 }
 
 // THUMBNAILS
@@ -79,23 +123,24 @@ function findQuery(param) {
 
 // FUN STUFF
 
-//BIRTH CALCULATOR
+// BIRTH CALCULATOR
+function birthdayCalculators() {
+  let birth = "October 20, 1988 04:40:00 GMT";
+  let born = new Date(birth);
+  let now = new Date();
+  let elapsed = now - born;
 
-let birth = "October 20, 1988 04:40:00 GMT";
-let born = new Date(birth);
-let now = new Date();
-let elapsed = now - born;
+  var daysSinceBorn = Math.floor(elapsed / (1000 * 3600 * 24));
 
-var daysSinceBorn = Math.floor(elapsed / (1000 * 3600 * 24));
+  function birthdayCalculator() {
+    document.querySelector("#elapsed-days").innerHTML = daysSinceBorn;
+  }
 
-function birthdayCalculator() {
-  document.querySelector("#elapsed-days").innerHTML = daysSinceBorn;
-}
+  function birthCalculatorYears() {
+    let yearsSinceBorn = parseFloat(daysSinceBorn / 365).toFixed(2);
 
-function birthCalculatorYears() {
-  let yearsSinceBorn = parseFloat(daysSinceBorn / 365).toFixed(2);
-
-  document.querySelector("#elapsed-years").innerHTML = yearsSinceBorn;
+    document.querySelector("#elapsed-years").innerHTML = yearsSinceBorn;
+  }
 }
 
 // DARK MODE
