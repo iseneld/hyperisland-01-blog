@@ -25,7 +25,7 @@
   --h1: calc(var(--h2) * var(--type-scale));  
 
   /* Animation Speeds */
-  --speed-fast: 0.1s;
+  --speed-fast: 0.15s;
   --speed-slow: 0.5s;
 }
 

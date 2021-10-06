@@ -8,7 +8,7 @@
     "content": [
       "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
-      "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image'/>",
+      "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/>",
       "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
     ]
   },
@@ -21,7 +21,7 @@
     "content": [
         "<p>Since all pages vary in content, and I wanted to experiment with different layouts and behaviors, I’ve decided to place the media queries in the page-specific stylesheets.</p>",
         "<p>This process has given valuable insights into the cascading feature of CSS.</p>",
-        "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image'/>",
+        "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/>",
         "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
     ]
   },
@@ -33,7 +33,7 @@
      "fullSummary": "I’ve spent time in the browser’s Network tab, simulating page loads on slow connections without the use of cache. This has been educational on the loading mechanisms of browsers and gives a clear view of the importance of compressed images and documents.",
      "content": [
         "<p>By using separate CSS files for the unique styles for each page and compressing images, I reduced page load speed by over 45%.</p>",
-        "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image'/>",
+        "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/>",
         "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
      ]
    },

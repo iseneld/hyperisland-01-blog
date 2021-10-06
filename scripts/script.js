@@ -1,18 +1,13 @@
 // DOM
 
-function footer() {
-  let newFooter = document.createElement("footer");
-  let newAnchor = document.createElement("a");
-  newAnchor.setAttribute("href", "https://www.linkedin.com/in/micheliseneld/");
-  newAnchor.setAttribute("target", "_blank");
-  newAnchor.innerHTML = "Coded by Michel Iseneld";
-  newFooter.append(newAnchor);
-
-  document.querySelector("body").append(newFooter);
-}
+const newAnchor = document.createElement("a");
+const newFooter = document.createElement("footer");
+const newHeader = document.createElement("header");
+const newSection = document.createElement("section");
+const newLi = document.createElement("li");
+const newUl = document.createElement("ul");
 
 function header() {
-  let newHeader = document.createElement("header");
   let headerContent = `
     <a href="../index.html">Michel Iseneld</a>
     <nav>
@@ -26,8 +21,71 @@ function header() {
   document.querySelector("body").prepend(newHeader);
 }
 
+const listItems = [
+  {
+    title: "SVG Animation",
+    url: "./pages/svg.html",
+    img: "",
+  },
+  {
+    title: "Hypnus Records",
+    url: "./pages/hypnus.html",
+    img: "../images/hypnus.jpg",
+  },
+  {
+    title: "Kabalion Records (empty)",
+    url: "./pages/hypnus.html",
+    img: "../images/kabalion.jpg",
+  },
+  {
+    title: "Aedi Records (empty)",
+    url: "#",
+    img: "../images/aedi.jpg",
+  },
+  {
+    title: "The Memoir (empty)",
+    url: "#",
+    img: "../images/thememoir.jpg",
+  },
+  {
+    title: "Aether Mechanics (empty)",
+    url: "#",
+    img: "../images/aethermechanics.jpg",
+  },
+  {
+    title: "Ntogn (empty)",
+    url: "#",
+    img: "../images/ntogn.jpg",
+  },
+  {
+    title: "Slink (empty)",
+    url: "#",
+    img: "../images/slink.jpg",
+  },
+  {
+    title: "Photography (empty)",
+    url: "#",
+    img: "../images/photography.jpg",
+  },
+];
+
+function landingList(x) {
+  document.querySelector("main").append(newSection);
+  newSection.className = "landing-list";
+  newSection.append(newUl);
+  for (let i = 0; i < x.length; i++) {
+    newUl.innerHTML += `
+    <li class="landing-list__hypnus" style="background-image: url(${x[i].img});"> 
+      <h2>  
+        <a href="${x[i].url}">
+          ${x[i].title}
+        </a>
+      </h2>
+    </li>`;
+  }
+}
+
 function indexHeader() {
-  let newHeader = document.createElement("header");
   let headerContent = `
     <a href="./index.html">Michel Iseneld</a>
     <nav>
@@ -41,6 +99,15 @@ function indexHeader() {
   document.querySelector("body").prepend(newHeader);
 }
 
+function footer() {
+  newAnchor.setAttribute("href", "https://www.linkedin.com/in/micheliseneld/");
+  newAnchor.setAttribute("target", "_blank");
+  newAnchor.innerHTML = "Coded by Michel Iseneld";
+  newFooter.append(newAnchor);
+
+  document.querySelector("body").append(newFooter);
+}
+
 // Loads header and footer for all pages.
 // index.html has a separate function for correct link path.
 
@@ -48,6 +115,7 @@ function loadDOM(x) {
   if (x === "index") {
     indexHeader();
     footer();
+    landingList(listItems);
   } else {
     header();
     footer();
@@ -110,7 +178,6 @@ function createPost(post) {
   blogSection.append(h5);
 
   let content = post.content;
-
   for (let i = 0; i < content.length; i++) {
     blogSection.innerHTML += content[i];
   }
@@ -151,6 +218,9 @@ function birthdayCalculators() {
 
     document.querySelector("#elapsed-years").innerHTML = yearsSinceBorn;
   }
+
+  birthdayCalculator();
+  birthCalculatorYears();
 }
 
 // DARK MODE

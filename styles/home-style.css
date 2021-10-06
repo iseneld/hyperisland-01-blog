@@ -59,6 +59,7 @@ main {
   --bg-pos: left / contain no-repeat; 
 }
 
+.landing-list { background: var(--bg-pos); }
 .landing-list__hypnus { background: var(--bg-pos) url(../images/hypnus.jpg); }
 .landing-list__kabalion { background: var(--bg-pos) url(../images/kabalion.jpg); }
 .landing-list__aedi { background: var(--bg-pos) url(../images/aedi.jpg); }
@@ -66,7 +67,6 @@ main {
 .landing-list__aether-mechanics { background: var(--bg-pos) url(../images/aethermechanics.jpg); }
 .landing-list__ntogn { background: var(--bg-pos) url(../images/ntogn.jpg); }
 .landing-list__slink { background: var(--bg-pos) url(../images/slink.jpg); }
-.landing-list__the-spellbook { background: var(--bg-pos) url(../images/thespellbook.jpg); }
 .landing-list__photography { background: var(--bg-pos) url(../images/photography.jpg); }
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
