@@ -1,0 +1,204 @@
+
+@import "_blog-post-style.scss";
+@import "_blog-style.scss";
+@import "_home-style.scss";
+@import "_svg-style.scss";
+
+:root {
+  /* Global Sizes */
+  --border-size: 1rem;
+  --golden-ratio: 38.2%;
+
+  /* Color Palette */
+
+  --color-white: rgb(238, 238, 238);
+  --color-blood: #af3333;
+  --color-dark: #1e1e1e;
+  --color-grey: #d2d2ce;
+  --color-orange: #f66c03;
+  --color-yellow: #ffb532;
+
+  /* Font Size Scales */
+
+  --base-font-size: 1.25em;
+  --type-scale: 1.125; /* Major Second Scale */
+
+  --h5: calc(var(--base-font-size));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));  
+
+  /* Animation Speeds */
+  --speed-fast: 0.15s;
+  --speed-slow: 0.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-dark);
+  min-width: 280px;
+  width: 100vw;
+  position: relative;
+
+  display: grid;
+  row-gap: 1rem;
+  grid-template-rows: auto;
+  overflow-x: hidden; /* Prevents scroll bar during animations */
+
+  color: var(--dark-color);
+  font-size: var(--base-font-size);
+  line-height: 1.5;
+}
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header {
+  outline: 1rem solid var(--color-dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+
+  position: sticky;
+  top: 0;
+
+  background-color: var(--color-white);
+
+  font-size: var(--h2);
+  font-weight: bold;
+}
+
+header a {
+  padding: 2rem 0.3rem 2rem 2rem;
+
+  text-decoration: none;
+}
+
+header ul li a {
+  padding: 2rem 2rem 2rem 0.3rem;
+
+  color: var(--color-blood);
+  text-decoration: underline;
+
+  transition: color var(--speed-fast);
+}
+
+header ul li a:focus,
+header ul li a:hover {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  background-color: var(--color-dark); 
+  box-shadow: 0 4px .5rem #1e1e1e;
+  min-width: 16.75rem;
+
+  color: var(--color-white);
+  font-size: var(--h5);
+
+  transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
+}
+
+footer:hover {
+  background-color: var(--color-blood);
+  color: var(--color-white);
+}
+
+footer a,
+footer a:visited {
+  padding: 2rem;
+
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-white);
+}
+
+/* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */
+
+a {
+  color: var(--color-dark);
+  text-decoration: underline;
+
+  transition: color var(--speed-fast);
+}
+
+a:focus,
+a:hover {
+  color: var(--color-blood);
+  text-decoration: none;
+}
+
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+
+li { list-style-type: none; }
+
+p { margin: 2rem 0 0; }
+p:first-child { margin-top: 0; }
+
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
+
+.dragon-text {
+  /* Red gothic font style */
+  color: var(--color-blood);
+  font-family: "UnifrakturMaguntia", "Times New Roman", serif;
+  font-size: calc(var(--h1) * 1.75);
+  line-height: 1em;
+}
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+
+@media screen and (max-width: 27rem) {
+  :root {
+    --base-font-size: 1rem; 
+  }
+}
+
+
+@media screen and (min-width: 64rem) {
+  footer {
+    height: auto;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+
+    border: 0.5rem solid var(--color-grey);
+
+    font-size: var(--base-font-size);
+  }
+
+  footer:active,
+  footer:hover {        
+    border-radius: 1rem;
+
+    transition: border-radius var(--speed-fast) ease-out;
+  }
+
+  footer a,
+  footer a:visited {
+      padding: 1rem;
+  }
+}
