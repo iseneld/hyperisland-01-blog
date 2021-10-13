@@ -15,10 +15,10 @@ main {
   background-size: cover;
 
   color: var(--color-white);
-}
 
-.landing__banner h1 {
-  margin-bottom: 6rem;
+  h1 {
+    margin-bottom: 6rem;
+  }
 }
 
 /* LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST */
@@ -26,9 +26,8 @@ main {
 .landing-list ul {
   display: grid;
   grid-gap: 1rem;
-}
 
-.landing-list ul li a {
+  li a {
   box-shadow: 0 0 1rem black;
   padding: 2rem;
   width: 100%;
@@ -43,14 +42,15 @@ main {
     border-radius 0.2s 0.4s ease;
 }
 
-.landing-list ul li a:focus,
-.landing-list ul li a:hover {
-  border-radius: 1rem 0 0 1rem;
-  transform: translateX(2.5em);
+  li a:focus,
+  li a:hover {
+    border-radius: 1rem 0 0 1rem;
+    transform: translateX(2.5em);
 
-  transition: 
+    transition: 
     transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93), 
     border-radius 0.2s;
+  }
 }
 
 /* Background Images*/

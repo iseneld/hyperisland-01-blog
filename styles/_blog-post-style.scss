@@ -8,20 +8,20 @@
   grid-template-columns: 32rem;
 
   background-color: var(--color-grey);
-}
 
-.blog__post h2 {
-  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 2rem;
 
-  grid-column: 1 / 2;
-}
+    grid-column: 1 / 2;
+  }
 
-.blog__post img {
-  background-color: var(--color-dark);
-  border: var(--border-size) solid var(--color-dark);
-  margin: 2rem 0 0;
+  img {
+    background-color: var(--color-dark);
+    border: var(--border-size) solid var(--color-dark);
+    margin: 2rem 0 0;
 
-  transform: translateX(-32.5rem);
+    transform: translateX(-32.5rem);
+  }
 }
 
 /* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
@@ -40,19 +40,19 @@ button {
   font-size: var(--base-font-size); 
 
   transition: border-radius var(--speed-slow);
-}
 
-button:focus,
-button:hover {
-  border-radius: 1rem;
-  cursor: pointer;
+  &:focus,
+  &:hover {
+    border-radius: 1rem;
+    cursor: pointer;
 
-  transition: border-radius  var(--speed-fast);
-}
+    transition: border-radius  var(--speed-fast);
+  }
 
-button:active {
-  box-shadow: none;
-  transform: scale(95%);
+  &:active {
+    box-shadow: none;
+    transform: scale(95%);
+  }
 }
 
 :root *.dark-mode,
@@ -77,12 +77,12 @@ button:active {
 @media screen and (max-width: 36rem) {
   .blog__post {
     grid-template-columns: 1fr;
-  }
 
-  .blog__post img {
-    transform: translateX(0px);
-    /* max-width: 100%; */
-    background-color: var(--color-blood);
-    border: 3vw solid var(--color-blood);
+    img {
+      transform: translateX(0px);
+      /* max-width: 100%; */
+      background-color: var(--color-blood);
+      border: 3vw solid var(--color-blood);
+    }
   }
 }
