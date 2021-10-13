@@ -1,11 +1,11 @@
-
-@import "_blog-post-style.scss";
-@import "_blog-style.scss";
-@import "_home-style.scss";
-@import "_svg-style.scss";
-
 $font-main: "Roboto", Arial, Helvetica, sans-serif;
 $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
+
+@import "_normalize";
+@import "_blog-post-style";
+@import "_blog-style";
+@import "_home-style";
+@import "_svg-style";
 
 :root {
   /* Global Sizes */
@@ -33,7 +33,7 @@ $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
   --h1: calc(var(--h2) * var(--type-scale));  
 
   /* Animation Speeds */
-  --speed-fast: 0.15s;
+  --speed-fast: 0.25s;
   --speed-slow: 0.5s;
 }
 

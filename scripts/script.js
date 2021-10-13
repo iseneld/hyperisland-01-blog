@@ -1,3 +1,48 @@
+// START PAGE LIST ITEMS
+
+const listItems = [
+  {
+    title: "Hypnus Records",
+    url: "https://hypnusrecords.com/",
+    img: "../images/hypnus.jpg",
+  },
+  {
+    title: "Max for Live",
+    url: "https://hypnusrecords.com/shop",
+    img: "../images/slink.jpg",
+  },
+  {
+    title: "The Memoir",
+    url: "https://soundcloud.com/hypnus-memoirs",
+    img: "../images/thememoir.jpg",
+  },
+  {
+    title: "Aether Mechanics",
+    url: "https://aethermechanics.bandcamp.com/",
+    img: "../images/aethermechanics.jpg",
+  },
+  {
+    title: "Ntogn",
+    url: "https://tomerecords.bandcamp.com/",
+    img: "../images/ntogn.jpg",
+  },
+  {
+    title: "Photography",
+    url: "https://www.instagram.com/micheliseneld/",
+    img: "../images/photography.jpg",
+  },
+  {
+    title: "Aedi Records",
+    url: "https://aedirecords.bandcamp.com/",
+    img: "../images/aedi.jpg",
+  },
+  {
+    title: "Kabalion Records",
+    url: "https://kabalion.bandcamp.com/",
+    img: "../images/kabalion.jpg",
+  },
+];
+
 // DOM
 
 const newAnchor = document.createElement("a");
@@ -22,54 +67,6 @@ function header() {
   document.querySelector("body").prepend(newHeader);
 }
 
-const listItems = [
-  {
-    title: "SVG Animation",
-    url: "./pages/svg.html",
-    img: "",
-  },
-  {
-    title: "Hypnus Records",
-    url: "./pages/hypnus.html",
-    img: "../images/hypnus.jpg",
-  },
-  {
-    title: "Kabalion Records (empty)",
-    url: "./pages/hypnus.html",
-    img: "../images/kabalion.jpg",
-  },
-  {
-    title: "Aedi Records (empty)",
-    url: "#",
-    img: "../images/aedi.jpg",
-  },
-  {
-    title: "The Memoir (empty)",
-    url: "#",
-    img: "../images/thememoir.jpg",
-  },
-  {
-    title: "Aether Mechanics (empty)",
-    url: "#",
-    img: "../images/aethermechanics.jpg",
-  },
-  {
-    title: "Ntogn (empty)",
-    url: "#",
-    img: "../images/ntogn.jpg",
-  },
-  {
-    title: "Slink (empty)",
-    url: "#",
-    img: "../images/slink.jpg",
-  },
-  {
-    title: "Photography (empty)",
-    url: "#",
-    img: "../images/photography.jpg",
-  },
-];
-
 function landingList(x) {
   document.querySelector("main").append(newSection);
   newSection.className = "landing-list";
@@ -78,7 +75,7 @@ function landingList(x) {
     newUl.innerHTML += `
     <li class="landing-list__hypnus" style="background-image: url(${x[i].img});"> 
       <h2>  
-        <a href="${x[i].url}">
+        <a href="${x[i].url}" target="_blank">
           ${x[i].title}
         </a>
       </h2>
