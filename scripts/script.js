@@ -4,6 +4,7 @@ const newAnchor = document.createElement("a");
 const newFooter = document.createElement("footer");
 const newHeader = document.createElement("header");
 const newSection = document.createElement("section");
+const newDiv = document.createElement("div");
 const newLi = document.createElement("li");
 const newUl = document.createElement("ul");
 
@@ -85,6 +86,11 @@ function landingList(x) {
   }
 }
 
+function michelPortrait() {
+  newDiv.classList.add("michel");
+  newSection.prepend(newDiv);
+}
+
 function indexHeader() {
   let headerContent = `
     <a href="./index.html">Michel Iseneld</a>
@@ -116,6 +122,7 @@ function loadDOM(x) {
     indexHeader();
     footer();
     landingList(listItems);
+    michelPortrait();
   } else {
     header();
     footer();
@@ -201,6 +208,7 @@ function findQuery(param) {
 // FUN STUFF
 
 // BIRTH CALCULATOR
+
 function birthdayCalculators() {
   let birth = "October 20, 1988 04:40:00 GMT";
   let born = new Date(birth);

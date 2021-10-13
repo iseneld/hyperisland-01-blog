@@ -4,6 +4,9 @@
 @import "_home-style.scss";
 @import "_svg-style.scss";
 
+$font-main: "Roboto", Arial, Helvetica, sans-serif;
+$font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
+
 :root {
   /* Global Sizes */
   --border-size: 1rem;
@@ -37,7 +40,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: $font-main;
   box-sizing: border-box;
 }
 
@@ -164,7 +167,7 @@ p:first-child { margin-top: 0; }
 .dragon-text {
   /* Red gothic font style */
   color: var(--color-blood);
-  font-family: "UnifrakturMaguntia", "Times New Roman", serif;
+  font-family: $font-dragon;
   font-size: calc(var(--h1) * 1.75);
   line-height: 1em;
 }
